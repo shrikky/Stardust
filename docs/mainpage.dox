@@ -1,9 +1,9 @@
 /**
-@brief Documentation for SUTLogger
-@author Lak vijay
-@file Mainpage.dox
+@brief Doc
+@author Lak Vijay
+@file mainpage.dox
 */
 /**
 @mainpage Demo API
-This is a simple demo of getting doxygen output to github
+this is a demo
 */
