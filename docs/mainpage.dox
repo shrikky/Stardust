@@ -1,9 +1,9 @@
 /**
-@brief Doc
-@author Lak Vijay
-@file mainpage.dox
+@brief Documentation for my project
+@author Steve Martell
+@file Mainpage.dox
 */
 /**
-@mainpage Demo API
-this is a demo
+@mainpage Demonstration API
+This is a simple demonstration of getting Doxygen output to GitHub
 */

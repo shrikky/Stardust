@@ -1,0 +1,31 @@
+\hypertarget{_s_u_t_log_manager_8cs}{}\section{C\+:/\+Users/lvijayaraghavan/\+Projects/\+Systems\+Unity\+Tools/\+Assets/\+Systems\+Unity\+Tools/\+Core/\+Helpers/\+S\+U\+T\+Log\+Manager.cs File Reference}
+\label{_s_u_t_log_manager_8cs}\index{C\+:/\+Users/lvijayaraghavan/\+Projects/\+Systems\+Unity\+Tools/\+Assets/\+Systems\+Unity\+Tools/\+Core/\+Helpers/\+S\+U\+T\+Log\+Manager.\+cs@{C\+:/\+Users/lvijayaraghavan/\+Projects/\+Systems\+Unity\+Tools/\+Assets/\+Systems\+Unity\+Tools/\+Core/\+Helpers/\+S\+U\+T\+Log\+Manager.\+cs}}
+
+
+\mbox{\hyperlink{class_s_u_t_log_manager}{S\+U\+T\+Log\+Manager}} is used to provide consistent logging convention.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_s_u_t_log_manager}{S\+U\+T\+Log\+Manager}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_s_u_t_log_manager}{S\+U\+T\+Log\+Manager}} is a custom static logger class that is designed to get custom formatted output data for better filtering and ease of use for the clients. It also provides stack trace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_s_u_t_log_manager_8cs_a0100be52d45f14348918ea69ec09f959}\label{_s_u_t_log_manager_8cs_a0100be52d45f14348918ea69ec09f959}} 
+using {\bfseries Debug} = Unity\+Engine.\+Debug
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_s_u_t_log_manager}{S\+U\+T\+Log\+Manager}} is used to provide consistent logging convention. 
+
+The logs follow the ML logging convention as well as provides extensive stack trace details when debugging through the shell
+
+~\newline
+This class is a singleton logg class which is a wrapper around the Unity\textquotesingle{}s Debug classes. ~\newline
+This class provides a standard log format to most of the logs which is consistent with most of our practices at ML. ~\newline
+It also extensive stack tracing when debugging using the command shell. ~\newline
+This class can also be extended by client applications to add their own functionalities. ~\newline
+The most important functionalities are static functions, once extended, we can use the singleton instance to access the extended functionalities. 

@@ -1,0 +1,365 @@
+\hypertarget{class_s_u_t_log_manager}{}\section{S\+U\+T\+Log\+Manager Class Reference}
+\label{class_s_u_t_log_manager}\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+
+
+\mbox{\hyperlink{class_s_u_t_log_manager}{S\+U\+T\+Log\+Manager}} is a custom static logger class that is designed to get custom formatted output data for better filtering and ease of use for the clients. It also provides stack trace.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_a93ab3606fa0ca251e796f9383537c7ca}{Log}} (object message, \mbox{[}Caller\+Line\+Number\mbox{]} int source\+Line\+Number=0, \mbox{[}Caller\+File\+Path\mbox{]} string filepath=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Logs data to console, Standard equivalent to Debug.\+Log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_aa3f8070176715571ce2b8d43a97a8d88}{Log}} (object message, Unity\+Engine.\+Object context, \mbox{[}Caller\+Line\+Number\mbox{]} int source\+Line\+Number=0, \mbox{[}Caller\+File\+Path\mbox{]} string filepath=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Logs data to console, Standard equivalent to Debug.\+Log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_a26f1bf1459d00460dea0f3eda900ef5a}{Log\+Error}} (object message, Unity\+Engine.\+Object context, \mbox{[}Caller\+Line\+Number\mbox{]} int source\+Line\+Number=0, \mbox{[}Caller\+File\+Path\mbox{]} string filepath=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Logs Error to console, equivalent to Debug.\+Log\+Error \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_a45b511264c98490037a7437970d6a492}{Log\+Error}} (object message, \mbox{[}Caller\+Line\+Number\mbox{]} int source\+Line\+Number=0, \mbox{[}Caller\+File\+Path\mbox{]} string filepath=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Logs Error to console, equivalent to Debug.\+Log\+Error \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_a63a6a0200263f36810d6ede9ca578942}{Log\+Exception}} (Exception exception, \mbox{[}Caller\+Line\+Number\mbox{]} int source\+Line\+Number=0, \mbox{[}Caller\+File\+Path\mbox{]} string filepath=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Log Exception to console, equivalent to Debug.\+Log\+Exception \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_afff87cc004cbdcf5f3005f81eba4a008}{Log\+Exception}} (Exception exception, Unity\+Engine.\+Object context, \mbox{[}Caller\+Line\+Number\mbox{]} int source\+Line\+Number=0, \mbox{[}Caller\+File\+Path\mbox{]} string filepath=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Log Exception to console, equivalent to Debug.\+Log\+Exception \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_a188ae94dc81d8dcc77e403a1bf8c0aa0}{Log\+Format}} (string format, params object\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Logs formatted string to console, equivalent to Debug.\+Log\+Format \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_a8abdde905d033f341b059364732c41b6}{Log\+Format}} (Unity\+Engine.\+Object context, string format, params object\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Logs formatted string to console, equivalent to Debug.\+Log\+Format \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_a3a440d408789e18d9d98c23be1109d97}{Log\+Warning}} (object message, \mbox{[}Caller\+Line\+Number\mbox{]} int source\+Line\+Number=0, \mbox{[}Caller\+File\+Path\mbox{]} string filepath=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Log Warning to console, equivalent to Debug.\+Log\+Warning \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_ae55b8669d4549670220c65ec6125a46a}{Log\+Warning}} (object message, Unity\+Engine.\+Object context, \mbox{[}Caller\+Line\+Number\mbox{]} int source\+Line\+Number=0, \mbox{[}Caller\+File\+Path\mbox{]} string filepath=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Logs Error to console, equivalent to Debug.\+Log\+Error \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_a5493cf91256613ca690ed94a977647ff}{Enable\+Logs}} ()
+\begin{DoxyCompactList}\small\item\em Enable Logging to console, this prevents the execution of Debug.\+Log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_s_u_t_log_manager_aefe5c2647d1f89847c677317b0106fb4}{Disable\+Logs}} ()
+\begin{DoxyCompactList}\small\item\em Enable Logging to console, this prevents the execution of Debug.\+Log \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_s_u_t_log_manager}{S\+U\+T\+Log\+Manager}} \mbox{\hyperlink{class_s_u_t_log_manager_a7f02a96e962deb687b63b19b5ab33e13}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Singleton instance \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_s_u_t_log_manager_ae14c42442f80f83008ffd0698d3b1093}{Log\+Category}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_s_u_t_log_manager_a93ab3606fa0ca251e796f9383537c7ca}{S\+U\+T\+Log\+Manager.\+Log}}(Debug.\+Log) and S\+U\+T\+Logger.\+Log\+Format(Debug.\+Log\+Format) falls into this category \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_s_u_t_log_manager_a112da3e3ed2a3044086b831629bbf192}{Log\+Warning\+Category}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em S\+U\+T\+Log\+Manager.\+Warning (Debug.\+Log\+Warning) calls falls into this category \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_s_u_t_log_manager_acaa741c700b30172f48dd0bc1e20b79d}{Log\+Error\+Category}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_s_u_t_log_manager_a26f1bf1459d00460dea0f3eda900ef5a}{S\+U\+T\+Log\+Manager.\+Log\+Error}} (Debug.\+Log\+Error) falls into this category \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_s_u_t_log_manager_ab978587299dd80997fb28e7bd28f8272}{Log\+Exception\+Category}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_s_u_t_log_manager_a63a6a0200263f36810d6ede9ca578942}{S\+U\+T\+Log\+Manager.\+Log\+Exception}} (Debug.\+Log\+Exception) falls into this category \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_s_u_t_log_manager_a2e22a0dcde8c520e2b74ac0c42760941}{Log\+Prefix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Prefix that corresponds to Systems\+Unity\+Tools \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_s_u_t_log_manager_a420cdff170ede050d07fe0ef2d22866e}{File\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em name Of the file from where the log call originates \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_s_u_t_log_manager_a27407636aee838aa342bc54b250116b3}{Actual\+Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Payload \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_s_u_t_log_manager}{S\+U\+T\+Log\+Manager}} is a custom static logger class that is designed to get custom formatted output data for better filtering and ease of use for the clients. It also provides stack trace. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_u_t_log_manager_aefe5c2647d1f89847c677317b0106fb4}\label{class_s_u_t_log_manager_aefe5c2647d1f89847c677317b0106fb4}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Disable\+Logs@{Disable\+Logs}}
+\index{Disable\+Logs@{Disable\+Logs}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Disable\+Logs()}{DisableLogs()}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Disable\+Logs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable Logging to console, this prevents the execution of Debug.\+Log 
+
+\mbox{\Hypertarget{class_s_u_t_log_manager_a5493cf91256613ca690ed94a977647ff}\label{class_s_u_t_log_manager_a5493cf91256613ca690ed94a977647ff}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Enable\+Logs@{Enable\+Logs}}
+\index{Enable\+Logs@{Enable\+Logs}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Enable\+Logs()}{EnableLogs()}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Enable\+Logs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable Logging to console, this prevents the execution of Debug.\+Log 
+
+\mbox{\Hypertarget{class_s_u_t_log_manager_a93ab3606fa0ca251e796f9383537c7ca}\label{class_s_u_t_log_manager_a93ab3606fa0ca251e796f9383537c7ca}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log@{Log}}
+\index{Log@{Log}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log()}{Log()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log (\begin{DoxyParamCaption}\item[{object}]{message,  }\item[{\mbox{[}\+Caller\+Line\+Number\mbox{]} int}]{source\+Line\+Number = {\ttfamily 0},  }\item[{\mbox{[}\+Caller\+File\+Path\mbox{]} string}]{filepath = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs data to console, Standard equivalent to Debug.\+Log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Payload\\
+\hline
+{\em source\+Line\+Number} & Automatic deduction of File line number of the call origin\\
+\hline
+{\em filepath} & Automatic deduction of the Location of the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_t_log_manager_aa3f8070176715571ce2b8d43a97a8d88}\label{class_s_u_t_log_manager_aa3f8070176715571ce2b8d43a97a8d88}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log@{Log}}
+\index{Log@{Log}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log()}{Log()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log (\begin{DoxyParamCaption}\item[{object}]{message,  }\item[{Unity\+Engine.\+Object}]{context,  }\item[{\mbox{[}\+Caller\+Line\+Number\mbox{]} int}]{source\+Line\+Number = {\ttfamily 0},  }\item[{\mbox{[}\+Caller\+File\+Path\mbox{]} string}]{filepath = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs data to console, Standard equivalent to Debug.\+Log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Payload\\
+\hline
+{\em source\+Line\+Number} & Automatic deduction of File line number of the call origin\\
+\hline
+{\em filepath} & Automatic deduction of the Location of the file \\
+\hline
+{\em context} & Unity Object context, like gameobject that can be passed in as a parameter\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_t_log_manager_a26f1bf1459d00460dea0f3eda900ef5a}\label{class_s_u_t_log_manager_a26f1bf1459d00460dea0f3eda900ef5a}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Error@{Log\+Error}}
+\index{Log\+Error@{Log\+Error}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Error()}{LogError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log\+Error (\begin{DoxyParamCaption}\item[{object}]{message,  }\item[{Unity\+Engine.\+Object}]{context,  }\item[{\mbox{[}\+Caller\+Line\+Number\mbox{]} int}]{source\+Line\+Number = {\ttfamily 0},  }\item[{\mbox{[}\+Caller\+File\+Path\mbox{]} string}]{filepath = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs Error to console, equivalent to Debug.\+Log\+Error 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Payload\\
+\hline
+{\em source\+Line\+Number} & Automatic deduction of File line number of the call origin\\
+\hline
+{\em filepath} & Automatic deduction of the Location of the file \\
+\hline
+{\em context} & Unity Object context, like gameobject that can be passed in as a parameter\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_t_log_manager_a45b511264c98490037a7437970d6a492}\label{class_s_u_t_log_manager_a45b511264c98490037a7437970d6a492}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Error@{Log\+Error}}
+\index{Log\+Error@{Log\+Error}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Error()}{LogError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log\+Error (\begin{DoxyParamCaption}\item[{object}]{message,  }\item[{\mbox{[}\+Caller\+Line\+Number\mbox{]} int}]{source\+Line\+Number = {\ttfamily 0},  }\item[{\mbox{[}\+Caller\+File\+Path\mbox{]} string}]{filepath = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs Error to console, equivalent to Debug.\+Log\+Error 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Payload\\
+\hline
+{\em source\+Line\+Number} & Automatic deduction of File line number of the call origin\\
+\hline
+{\em filepath} & Automatic deduction of the Location of the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_t_log_manager_a63a6a0200263f36810d6ede9ca578942}\label{class_s_u_t_log_manager_a63a6a0200263f36810d6ede9ca578942}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Exception@{Log\+Exception}}
+\index{Log\+Exception@{Log\+Exception}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Exception()}{LogException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log\+Exception (\begin{DoxyParamCaption}\item[{Exception}]{exception,  }\item[{\mbox{[}\+Caller\+Line\+Number\mbox{]} int}]{source\+Line\+Number = {\ttfamily 0},  }\item[{\mbox{[}\+Caller\+File\+Path\mbox{]} string}]{filepath = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Log Exception to console, equivalent to Debug.\+Log\+Exception 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exception} & Exception thrown by the client app\\
+\hline
+{\em source\+Line\+Number} & Automatic deduction of File line number of the call origin\\
+\hline
+{\em filepath} & Automatic deduction of the Location of the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_t_log_manager_afff87cc004cbdcf5f3005f81eba4a008}\label{class_s_u_t_log_manager_afff87cc004cbdcf5f3005f81eba4a008}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Exception@{Log\+Exception}}
+\index{Log\+Exception@{Log\+Exception}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Exception()}{LogException()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log\+Exception (\begin{DoxyParamCaption}\item[{Exception}]{exception,  }\item[{Unity\+Engine.\+Object}]{context,  }\item[{\mbox{[}\+Caller\+Line\+Number\mbox{]} int}]{source\+Line\+Number = {\ttfamily 0},  }\item[{\mbox{[}\+Caller\+File\+Path\mbox{]} string}]{filepath = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Log Exception to console, equivalent to Debug.\+Log\+Exception 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exception} & Exception thrown by the client app\\
+\hline
+{\em source\+Line\+Number} & Automatic deduction of File line number of the call origin\\
+\hline
+{\em filepath} & Automatic deduction of the Location of the file \\
+\hline
+{\em context} & Unity Object context, like gameobject that can be passed in as a parameter\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_t_log_manager_a188ae94dc81d8dcc77e403a1bf8c0aa0}\label{class_s_u_t_log_manager_a188ae94dc81d8dcc77e403a1bf8c0aa0}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Format@{Log\+Format}}
+\index{Log\+Format@{Log\+Format}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Format()}{LogFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log\+Format (\begin{DoxyParamCaption}\item[{string}]{format,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs formatted string to console, equivalent to Debug.\+Log\+Format 
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & String format \\
+\hline
+{\em args} & Parmeters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_t_log_manager_a8abdde905d033f341b059364732c41b6}\label{class_s_u_t_log_manager_a8abdde905d033f341b059364732c41b6}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Format@{Log\+Format}}
+\index{Log\+Format@{Log\+Format}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Format()}{LogFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log\+Format (\begin{DoxyParamCaption}\item[{Unity\+Engine.\+Object}]{context,  }\item[{string}]{format,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs formatted string to console, equivalent to Debug.\+Log\+Format 
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & String format \\
+\hline
+{\em args} & Parmeters \\
+\hline
+{\em context} & Unity Object context, like gameobject that can be passed in as a parameter\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_t_log_manager_a3a440d408789e18d9d98c23be1109d97}\label{class_s_u_t_log_manager_a3a440d408789e18d9d98c23be1109d97}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Warning@{Log\+Warning}}
+\index{Log\+Warning@{Log\+Warning}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Warning()}{LogWarning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log\+Warning (\begin{DoxyParamCaption}\item[{object}]{message,  }\item[{\mbox{[}\+Caller\+Line\+Number\mbox{]} int}]{source\+Line\+Number = {\ttfamily 0},  }\item[{\mbox{[}\+Caller\+File\+Path\mbox{]} string}]{filepath = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Log Warning to console, equivalent to Debug.\+Log\+Warning 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Payload\\
+\hline
+{\em source\+Line\+Number} & Automatic deduction of File line number of the call origin\\
+\hline
+{\em filepath} & Automatic deduction of the Location of the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_u_t_log_manager_ae55b8669d4549670220c65ec6125a46a}\label{class_s_u_t_log_manager_ae55b8669d4549670220c65ec6125a46a}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Warning@{Log\+Warning}}
+\index{Log\+Warning@{Log\+Warning}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Warning()}{LogWarning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void S\+U\+T\+Log\+Manager.\+Log\+Warning (\begin{DoxyParamCaption}\item[{object}]{message,  }\item[{Unity\+Engine.\+Object}]{context,  }\item[{\mbox{[}\+Caller\+Line\+Number\mbox{]} int}]{source\+Line\+Number = {\ttfamily 0},  }\item[{\mbox{[}\+Caller\+File\+Path\mbox{]} string}]{filepath = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs Error to console, equivalent to Debug.\+Log\+Error 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Payload\\
+\hline
+{\em source\+Line\+Number} & Automatic deduction of File line number of the call origin\\
+\hline
+{\em filepath} & Automatic deduction of the Location of the file \\
+\hline
+{\em context} & Unity Object context, like gameobject that can be passed in as a parameter\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_s_u_t_log_manager_a27407636aee838aa342bc54b250116b3}\label{class_s_u_t_log_manager_a27407636aee838aa342bc54b250116b3}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Actual\+Message@{Actual\+Message}}
+\index{Actual\+Message@{Actual\+Message}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Actual\+Message}{ActualMessage}}
+{\footnotesize\ttfamily string S\+U\+T\+Log\+Manager.\+Actual\+Message\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Payload 
+
+\mbox{\Hypertarget{class_s_u_t_log_manager_a420cdff170ede050d07fe0ef2d22866e}\label{class_s_u_t_log_manager_a420cdff170ede050d07fe0ef2d22866e}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!File\+Name@{File\+Name}}
+\index{File\+Name@{File\+Name}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{File\+Name}{FileName}}
+{\footnotesize\ttfamily string S\+U\+T\+Log\+Manager.\+File\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+name Of the file from where the log call originates 
+
+\mbox{\Hypertarget{class_s_u_t_log_manager_a7f02a96e962deb687b63b19b5ab33e13}\label{class_s_u_t_log_manager_a7f02a96e962deb687b63b19b5ab33e13}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Instance@{Instance}}
+\index{Instance@{Instance}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_s_u_t_log_manager}{S\+U\+T\+Log\+Manager}} S\+U\+T\+Log\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Singleton instance 
+
+\mbox{\Hypertarget{class_s_u_t_log_manager_ae14c42442f80f83008ffd0698d3b1093}\label{class_s_u_t_log_manager_ae14c42442f80f83008ffd0698d3b1093}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Category@{Log\+Category}}
+\index{Log\+Category@{Log\+Category}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Category}{LogCategory}}
+{\footnotesize\ttfamily string S\+U\+T\+Log\+Manager.\+Log\+Category\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+\mbox{\hyperlink{class_s_u_t_log_manager_a93ab3606fa0ca251e796f9383537c7ca}{S\+U\+T\+Log\+Manager.\+Log}}(Debug.\+Log) and S\+U\+T\+Logger.\+Log\+Format(Debug.\+Log\+Format) falls into this category 
+
+\mbox{\Hypertarget{class_s_u_t_log_manager_acaa741c700b30172f48dd0bc1e20b79d}\label{class_s_u_t_log_manager_acaa741c700b30172f48dd0bc1e20b79d}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Error\+Category@{Log\+Error\+Category}}
+\index{Log\+Error\+Category@{Log\+Error\+Category}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Error\+Category}{LogErrorCategory}}
+{\footnotesize\ttfamily string S\+U\+T\+Log\+Manager.\+Log\+Error\+Category\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+\mbox{\hyperlink{class_s_u_t_log_manager_a26f1bf1459d00460dea0f3eda900ef5a}{S\+U\+T\+Log\+Manager.\+Log\+Error}} (Debug.\+Log\+Error) falls into this category 
+
+\mbox{\Hypertarget{class_s_u_t_log_manager_ab978587299dd80997fb28e7bd28f8272}\label{class_s_u_t_log_manager_ab978587299dd80997fb28e7bd28f8272}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Exception\+Category@{Log\+Exception\+Category}}
+\index{Log\+Exception\+Category@{Log\+Exception\+Category}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Exception\+Category}{LogExceptionCategory}}
+{\footnotesize\ttfamily string S\+U\+T\+Log\+Manager.\+Log\+Exception\+Category\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+\mbox{\hyperlink{class_s_u_t_log_manager_a63a6a0200263f36810d6ede9ca578942}{S\+U\+T\+Log\+Manager.\+Log\+Exception}} (Debug.\+Log\+Exception) falls into this category 
+
+\mbox{\Hypertarget{class_s_u_t_log_manager_a2e22a0dcde8c520e2b74ac0c42760941}\label{class_s_u_t_log_manager_a2e22a0dcde8c520e2b74ac0c42760941}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Prefix@{Log\+Prefix}}
+\index{Log\+Prefix@{Log\+Prefix}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Prefix}{LogPrefix}}
+{\footnotesize\ttfamily string S\+U\+T\+Log\+Manager.\+Log\+Prefix\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Prefix that corresponds to Systems\+Unity\+Tools 
+
+\mbox{\Hypertarget{class_s_u_t_log_manager_a112da3e3ed2a3044086b831629bbf192}\label{class_s_u_t_log_manager_a112da3e3ed2a3044086b831629bbf192}} 
+\index{S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}!Log\+Warning\+Category@{Log\+Warning\+Category}}
+\index{Log\+Warning\+Category@{Log\+Warning\+Category}!S\+U\+T\+Log\+Manager@{S\+U\+T\+Log\+Manager}}
+\subsubsection{\texorpdfstring{Log\+Warning\+Category}{LogWarningCategory}}
+{\footnotesize\ttfamily string S\+U\+T\+Log\+Manager.\+Log\+Warning\+Category\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+S\+U\+T\+Log\+Manager.\+Warning (Debug.\+Log\+Warning) calls falls into this category 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lvijayaraghavan/\+Projects/\+Systems\+Unity\+Tools/\+Assets/\+Systems\+Unity\+Tools/\+Core/\+Helpers/S\+U\+T\+Log\+Manager.\+cs\end{DoxyCompactItemize}
